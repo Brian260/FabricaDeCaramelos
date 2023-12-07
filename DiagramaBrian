@@ -79,10 +79,10 @@ class Empleado {
 + setCargo(cargo: String): void  
 }
 
-FabricaDeCaramelos "1" <--- "1..*" Empleado
-FabricaDeCaramelos "1" <--- "1..*" MateriaPrima
-MateriaPrima "1..*" ---> "1" Pedido
-MateriaPrima "1..*" <--- "1" Proveedor
+FabricaDeCaramelos "1" *--- "1..*" Empleado
+FabricaDeCaramelos "1" *--- "1..*" MateriaPrima
+MateriaPrima "1..*" ---o "1" Pedido
+MateriaPrima "1..*" o--- "1" Proveedor
 Persona  <|--Proveedor
 Persona <|-- Empleado
 @enduml
