@@ -68,20 +68,12 @@ abstract class Persona {
 + setCi(ci: String): void         
 }
 
-class Empleado {
-- salario: double
-- cargo: String
-+ Empleado()
-+ Empleado(salario: double, cargo: String)
-+ getSalario(): String
-+ setSalario(salario: double): void
-+ getCargo(): String
-+ setCargo(cargo: String): void  
-}
-
-FabricaDeCaramelos "1" *--- "1..*" Empleado
 FabricaDeCaramelos "1" *--- "1..*" MateriaPrima
 MateriaPrima "1..*" ---o "1" Pedido
+MateriaPrima "1..*" o--- "1" Proveedor
+Persona  <|--Proveedor
+
+@enduml
 MateriaPrima "1..*" o--- "1" Proveedor
 Persona  <|--Proveedor
 Persona <|-- Empleado
