@@ -1,0 +1,23 @@
+@startuml
+Administrador{
+-usuario:string 
+-contraseña:string
++Administrador()
++Administrador(usuario:string,contraseña:string)
++getUsuario():string
++setUsuario(usuario:string):void 
++getContraseña ():string
++setContraseña(contraseña:string):void
+}
+Empleado{
+-salario:double 
+-cargo:string
++Empleado()
++Empleado(salario:double,cargo:string)
++getSalario():double
++setSalario(salario:double):void
++getCargo():string
++setCargo(cargo:string):void
+}
+Administrador<|--Empleado
+@enduml
