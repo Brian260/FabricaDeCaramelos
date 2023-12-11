@@ -113,6 +113,14 @@ public class PanelPedidos extends javax.swing.JPanel {
 
     private void buttonDeleteActionPerformed(java.awt.event.ActionEvent evt) {
         new BaseDatos().borrarDatosPedidios();
+        PanelPedidos panelPedidos = new PanelPedidos(panel);
+        panelPedidos.setSize(875, 501);
+        panelPedidos.setLocation(0,0);
+
+        panel.removeAll();
+        panel.add(panelPedidos, BorderLayout.CENTER);
+        panel.revalidate();
+        panel.repaint();
     }
 
 
