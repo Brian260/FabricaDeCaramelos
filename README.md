@@ -25,7 +25,7 @@ En esta foto se muestra como se eliminan los proveedores:
 ![Alt text](image-4.png)
 
 En esta foto se muestra como se elimino el proveedor Giuliana:
-![Alt text](image-4.png)
+![Alt text](image-5.png)
 
 
 
