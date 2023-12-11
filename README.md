@@ -7,7 +7,7 @@ Autentificacion:
 FabricaApp:
 
 Aqui esta la clase pricipal FabricaDeCaramelos yo le puse Empresa para guiarme mejor. Ahi cree varias partes de la interfaz como Card, CardPedidos, 
-HomeFabic, PanelFabric, PanelPedidos y PanelScroll. En un carpeta llamada CapturasBrian estan las fotos de mi parte del proyecto y estan listados por numeros para tener un orden.
+HomeFabic, PanelFabric, PanelPedidos y PanelScroll.  Aqui les dejo capturas de pantalla de como funciona mi parte del proyecto:
 
 En esta foto se muestra cuando se ingresan datos como la cantidad de materia prima y cuanto hay que pagar por esa materia prima y de que tipo es:
 ![Alt text](image.png)
