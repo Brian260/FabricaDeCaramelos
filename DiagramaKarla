@@ -1,0 +1,49 @@
+@startuml
+
+@startuml
+
+class Persona {
+- nombre: String
+- ci: String
++ Persona()
++ Persona(nombre: String, ci: String)
++ getNombre(): String
++ setNombre(nombre: String): void
++ getCi(): String
++ setCi(ci: String): void         
+}
+
+class Cliente{
+-celular: int
++Cliente()
++Cliente(celular: int)
++getCelular(): Celular
++setCelular(celular: int): void
+}
+
+class Empleado{
+-salario: double 
+-cargo: string
++Empleado()
++Empleado(salario:double,cargo:string)
++getSalario():double
++setSalario(salario:double):void
++getCargo():string
++setCargo(cargo:string):void
+}
+
+class Proveedor {
+- empresa: String
++ Proveedor()
++ Proveedor(empresa: String)
++ getEmpresa(): String
++ setEmpresa(empresa: String): void
+}
+
+Persona  <|--- Proveedor
+Persona <|--- Empleado
+Persona <|--- Cliente
+
+@enduml
+
+@enduml

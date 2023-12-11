@@ -1,0 +1,19 @@
+@startuml
+!theme cerulean
+
+class FabricaDeCaramelos {
+- nombre: String
+- director: String
+- costo: double
++ FabricaDeCaramelos()
++ FabricaDeCaramelos(nombre: String, director: String, costo: double)
++ getNombre(): String
++ setNombre(nombre: String): void
++ getDirector(): String
++ setDirector(director: String): void
++ getCosto(): String
++ setCosto(costo: double): void
++ CostoTotal(costo: double): void
+}
+
+@enduml

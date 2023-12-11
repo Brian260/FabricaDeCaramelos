@@ -1,0 +1,77 @@
+@startuml
+
+class ProductoDeConfiteria{
+-descripcion: string
+-lote: string
+-precio: double
+-ingredientes: ArrayList<MateriaPrima>
+-cantidad: int
++ProductoDeConfiteria()
++ProductoDeConfiteria(descripsion: string, lote: string, precio: double, ingredientes: ArrayList<MateriaPrima>, cantidad: int)
++getDescripcion(): string
++setDescripcion(descripcion: string): void
++getLote(): string
++setLote(lote: string): void
++getPrecio(): double
++setPrecio(precio: double): void
++getIngredientes(): ArrayList<MateriaPrima>
++setIngredientes(ingredientes: ArrayList<MateriaPrima>): void
++getCantidad(): int
++setCantidad(cantidad: int): void
+}
+
+class Pedido {
+- materiaPrima: MateriaPrima
+- cantidad: int
+- empleado: Empleado
++ Pedido()
++ Pedido(materiaPrima: MateriaPrima, cantidad: int, empleado: Empleado)
++ getMateriaPrima(): MateriaPrima
++ setMateriaPrima(materiaPrima: MateriaPrima): void
++ getCantidad(): String
++ setCantidad(cantidad: int): void
++ getEmpleado(): String
++ setEmpleado(empleado: Empleado): void
+}
+
+class Compra {
+-cliente: Cliente
+-productos: ArrayList<ProductoDeConfiteria>
++Compra()
++Compra(cliente: Cliente,productos: ArrayLIst<ProductosDeConfiteria>)
++getCliente(): Cliente
++setCliente(cliente: Cliente): void
++getProductos(): ArrayList<ProductoDeConfiteria>
++setProductos(productos: ArrayLIst<ProductoDeConfiteria>): void
++costoTotal(): double
+}
+
+class Chocolate {
+- dureza: String
+- color: String
++ Chocolate()
++ Chocolate(dureza: String, color: String): void
++getDureza(): String
++setDureza(dureza: String): void
++getColor(): String
++setColor(color: String): void
+}
+
+class Gomita {
+- forma: String
+- sabor: String
++ Gomita()
++ Gomita(forma: String, sabor: String): void
++getForma(): String
++setForma(forma: String): void
++getSabor(): String
++setSabor(sabor: String): void
+}
+
+
+ProductoDeConfiteria "1..*" ---* "1" Compra
+ProductoDeConfiteria "1..*" ---* "1" Pedido
+ProductoDeConfiteria <|--- Chocolate
+ProductoDeConfiteria <|--- Gomita
+
+@enduml

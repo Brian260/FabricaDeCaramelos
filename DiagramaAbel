@@ -1,0 +1,46 @@
+@startuml
+!theme materia
+
+class MateriaPrima {
+- descripcion: String
+- cantidad: int
+- costo: double
+- proveedor: Proveedor
++ MateriaPrima()
++ MateriaPrima(descripcion: String, cantidad: int, costo: double, proveedor: Proveedor)
++ getDescripcion(): String
++ setDescripcion(descripcion: String): void
++ getCantidad(): String
++ setCantidad(cantidad: int): void
++ getCosto(): String
++ setCosto(costo: double): void
++ getProveedor(): String
++ setProveedor(proveedor: Proveedor): void
+}
+
+Class Maquinaria {
+-estado : string
+-tipoDeProceso : string
++Maquinaria()
++Maquinaria(estado : string, tipoDeProceso : string)
++getEstado() : string
++setEstado(estado : string) : void
++getTipoDeProceso() : string
++setTipoDeProceso(tipoDeProceso:string):void
+}
+
+Class Operario {
+-salario : double
+-cargo : string
++Operario()
++Operario(salario : double, cargo : string)
++getSalario() : double
++setSalario(salario : double) : void
++getCargo() : string
++setCargo(cargo : string) : void
+}
+
+Maquinaria "1" o--- "1" Operario
+MateriaPrima "1..*" *--- "1" Maquinaria
+
+@enduml
