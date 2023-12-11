@@ -21,7 +21,10 @@ En esta foto se muestra como se puede modificar los proveedores:
 En esta foto se muestra como se guardaron las modificaciones:
 ![Alt text](image-3.png)
 
-En esta foto se muestra como se eliminanl los proveedores:
+En esta foto se muestra como se eliminan los proveedores:
+![Alt text](image-4.png)
+
+En esta foto se muestra como se elimino el proveedor Giuliana:
 ![Alt text](image-4.png)
 
 
