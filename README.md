@@ -1,4 +1,4 @@
-La aplicacion se creo mediante el Visual Studio Code es 100% java se ejecuta en el main adentro de el archivo.zip y si tiene algun error ejecutar el InitDataBase.java
+La aplicacion se creo mediante el Visual Studio Code es 100% java se ejecuta en el main.java adentro de el archivo.zip y si tiene algun error ejecutar el InitDataBase.java
 
 Autentificacion:
 
