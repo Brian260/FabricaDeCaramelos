@@ -27,15 +27,34 @@ En esta foto se muestra como se eliminan los proveedores:
 En esta foto se muestra como se elimino el proveedor Giuliana:
 ![Alt text](image-5.png)
 
-
-
-
-
-
 ProcesoDeElaboracion:
 
 
 
 VentaDeCaramelos:
 
+En esta carpeta se encuentran las clases Compra.java , Pedidos.java y ProductosDeConfituras.java . Tambien se encuentran las interfaces AddPedido.java y HomeShopping,java . Aqui les dejo capturas de pantalla de como funciona mi parte del proyecto:
 
+En esta foto se muestra la pagina de los pedidos: 
+![Alt text](image-6.png)
+
+En esta foto se muestra que pasa cuando tocas el boton comprar:
+![Alt text](image-7.png)
+
+En esta foto se muestra que pasa cuando tocas el boton calcular:
+![Alt text](image-8.png)
+
+En esta foto se muestra los pedidos realizados:
+![Alt text](image-9.png)
+
+En esta foto se muestra la funcionalidad de agregar pedidos:
+![Alt text](image-10.png)
+
+En esta foto se muestra la validez de agregar pedidos:
+![Alt text](image-11.png)
+
+En esta foto se muestra la nueva lista de pedidos:
+![Alt text](image-12.png)
+
+En esta foto se muestra la funcionalidad de eliminar pedidos:
+![Alt text](image-13.png)
